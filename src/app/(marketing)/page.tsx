@@ -46,7 +46,7 @@ const HomePage = async () => {
                         </p>
                         <div className="flex items-center justify-center whitespace-nowrap gap-4 z-50">
                             <Button asChild>
-                                <Link href={user ? "/dashboard" : "/auth/sign-in"} className="flex items-center">
+                                <Link href={user ? "/dashboard" : "/dashboard"} className="flex items-center">
                                     Start creating for free
                                     <ArrowRightIcon className="w-4 h-4 ml-2" />
                                 </Link>
@@ -307,8 +307,10 @@ const HomePage = async () => {
                             </p>
                             <div className="mt-6">
                                 <Button>
-                                    Get started for free
-                                    <ArrowRightIcon className="w-4 h-4 ml-2" />
+                                    <Link href="/sign-in">
+                                        Get started for free
+                                        <ArrowRightIcon className="w-4 h-4 ml-2" />
+                                    </Link>
                                 </Button>
                             </div>
                         </div>
